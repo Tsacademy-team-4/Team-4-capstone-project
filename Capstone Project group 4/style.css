@@ -1,4 +1,9 @@
-/* Css reset */
+/* Reset CSS by Amaka Ndukwu */
+
+/* making use of :where to allow for low specificity making it easy to override */
+
+
+/* 1. border-box for box model */
 *,
 *::before,
 *::after {
@@ -132,3 +137,67 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+/* */
+.table-field {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+} 
+
+ .table {
+  width: 100%;
+  height: 400px;
+  border-radius: 25px;
+}
+
+
+/* TABLE SECTION STYLING */
+
+table {
+  table-layout:fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+th, td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 10px 10px
+}
+
+td, .planet {
+  background-color: gray 
+}
+
+thead, tbody th {
+  background-color: lightblue;
+}
+
+.table-field h3, .form-field h3 {
+  color: #0A1AFF;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+caption {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+
+    @media (max-width: 768px) {
+     
+  
+    #table {
+        display: none;
+      }
+      
+
+}
