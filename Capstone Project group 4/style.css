@@ -132,3 +132,48 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
+/* TABLE SECTION STYLING */
+
+table {
+  table-layout:fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+th, td {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 10px 10px
+}
+
+td  {
+  background-color: #F2F7FF;
+}
+
+thead {
+  background-color: #164BAF;
+}
+
+ tbody th {
+    background-color:#D1E3FF;
+ }
+
+.table-field h3 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+caption {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+    #table {
+        display: none;
+      }
+}

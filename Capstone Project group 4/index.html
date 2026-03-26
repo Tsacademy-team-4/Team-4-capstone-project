@@ -2,56 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Group 4">
-    <title>Capstone Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Group 4">
+  <title>Capstone Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <!-- background color is #051540 -->
-        <!-- button color is #164BAF-->
-        <nav><img src="https://drive.google.com/thumbnail?id=1NnIud7cBdR8PcCQTQIKWbY6canZVlbvJ" alt="Planets logo"></nav>
-        <content></content>
-        <content><img src="https://drive.google.com/thumbnail?id=15A44xtGNtq_i4FkLVRGDeIKVgmxcdRmh" alt="Big Earth Image"></content>
-    </header>
-    <main>
-        <!-- Section with video -->
-        <section>
-            <content>
-                <video muted autoplay loop controls>
-                    <source type="video/mp4" src="https://v.ftcdn.net/03/65/38/03/700_F_365380314_Fknxrqzj7TEP0g1Xjto6gvIJ83yfsTvx_ST.mp4"/>
-                </video>
-            </content>
-            <content></content>
-        </section>
-        <!-- Section with images -->
-        <section>
-            <!-- background color is #F2F7FF -->
-            <content></content>
-            <content></content>
-        </section>
-        <!-- Section with table -->
-        <section>
-            <!-- heading column background color is #164BAF -->
-            <!-- the side is #D1E3FF -->
-            <!-- the content is #F2F7FF -->
-            <content></content>
-            <content></content>
-        </section>
-        <!-- Section with form -->
-        <section>
-            <!-- button color is #164BAF-->
-        </section>
-    </main>
-    <footer>
-        <!-- background color is #051540 -->
-    </footer>
+  <header>
+    <!-- background color is #051540 -->
+    <!-- button color is #164BAF-->
+    <nav><img src="https://drive.google.com/thumbnail?id=1NnIud7cBdR8PcCQTQIKWbY6canZVlbvJ" alt="Planets logo"></nav>
+    <content></content>
+    <content><img src="https://drive.google.com/thumbnail?id=15A44xtGNtq_i4FkLVRGDeIKVgmxcdRmh" alt="Big Earth Image">
+    </content>
+  </header>
+  <main>
+    <!-- Section with video -->
+    <section>
+      <content>
+        <video muted autoplay loop controls>
+          <source type="video/mp4"
+            src="https://v.ftcdn.net/03/65/38/03/700_F_365380314_Fknxrqzj7TEP0g1Xjto6gvIJ83yfsTvx_ST.mp4" />
+        </video>
+      </content>
+      <content></content>
+    </section>
+    <!-- Section with images -->
+    <section>
+      <!-- background color is #F2F7FF -->
+      <content></content>
+      <content></content>
+    </section>
+    <!-- Section with table -->
+
+    <section id="table">
+      <!-- heading column background color is #164BAF -->
+      <!-- the side is #D1E3FF -->
+      <!-- the content is #F2F7FF -->
+      <div class="table-field">
+        <h3> Planetary data </h3>
+
+        <div class="table-container">
+          <table class="table">
+            <caption> Data about the planets of our solar system (planetary facts taken from Nasa) </caption>
+            <thead>
+
+              <!-- 1st row of the table (the header) -->
+              <tr>
+                <th scope="colgroup" colspan="2"></th>
+                <th scope="col"> Name </th>
+
+                <th scope="col">
+                  <span> Mass </span>
+                  <span> (10<sup>24</sup> kg) </span>
+                </th>
+                <th scope="col">
+                  <span> Diameter </span>
+                  <span> (km) </span>
+                </th>
+                <th scope="col">
+                  <span> Density </span>
+                  <span> (kg/m<sup>3</sup>) </span>
+                </th>
+                <th scope="col">
+                  <span> Gravity </span>
+                  <span> (m/s<sup>2</sup>) </span>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <!-- 2nd row of the table -->
+              <tr>
+                <th scope="rowgroup" rowspan="4" colspan="2">
+                  <span> Terrestrial </span>
+                  <span> planets </span>
+                </th>
+                <th class="planet" scope="row"> Mercury </th>
+                <td> 0.330 </td>
+                <td> 4,879 </td>
+                <td> 5427 </td>
+                <td> 3.7 </td>
+              </tr>
+
+              <!-- 3rd row of the table-->
+              <tr>
+                <th class="planet" scope="row"> Venus </th>
+                <td> 4.87 </td>
+                <td> 12,104 </td>
+                <td> 5243 </td>
+                <td> 8.9 </td>
+              </tr>
+
+              <!-- 4th row of the table -->
+              <tr>
+                <th class="planet" class="planet" scope="row"> Earth </th>
+                <td> 5.97 </td>
+                <td> 12,756 </td>
+                <td> 5514 </td>
+                <td> 9.8 </td>
+              </tr>
+
+              <!-- 5th row of the table -->
+              <tr>
+                <th class="planet" scope="row"> Mars </th>
+                <td> 0.642 </td>
+                <td> 6,792 </td>
+                <td> 3933 </td>
+                <td> 3.7 </td>
+              </tr>
+
+              <!-- 6th row of the table -->
+              <tr>
+                <th scope="rowgroup" rowspan="4">
+                  <span> Jovian </span>
+                  <span> planets </span>
+                </th>
+                <th scope="rowgroup" rowspan="2">
+                  <span> Gas </span>
+                  <span> giants </span>
+                </th>
+                <th class="planet" scope="row"> Jupiter </th>
+                <td> 1898 </td>
+                <td> 142,984 </td>
+                <td> 1326 </td>
+                <td> 23.1 </td>
+              </tr>
+
+              <!-- 7th row of the table -->
+              <tr>
+                <th class="planet" scope="row"> Saturn </th>
+                <td> 568 </td>
+                <td> 120,536 </td>
+                <td> 687 </td>
+                <td> 9.0 </td>
+              </tr>
+
+              <!-- 8th row of the table -->
+              <tr>
+                <th scope="rowgroup" rowspan="2">
+                  <span> Ice </span>
+                  <span> giants </span>
+                </th>
+                <th class="planet" scope="row"> Uranus </th>
+                <td> 86.8 </td>
+                <td> 51,118 </td>
+                <td> 1271 </td>
+                <td> 8.7 </td>
+              </tr>
+
+              <!-- 9th row of the table -->
+              <tr>
+                <th class="planet" scope="row"> Neptune </th>
+                <td> 102 </td>
+                <td> 49,528 </td>
+                <td> 1638 </td>
+                <td> 11.0 </td>
+              </tr>
+
+              <!-- 10th row of the table -->
+              <tr>
+                <th scope="colgroup" colspan="2"> Dwarf planets </th>
+                <th class="planet" scope="row"> Pluto </th>
+                <td> 0.0146 </td>
+                <td> 2,370 </td>
+                <td> 2095 </td>
+                <td> 0.7 </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section with form -->
+    <section>
+      <!-- button color is #164BAF-->
+    </section>
+  </main>
+  <footer>
+    <!-- background color is #051540 -->
+  </footer>
 
 
-    <script src="project.js"></script>
+  <script src="project.js"></script>
 </body>
 
 </html>
