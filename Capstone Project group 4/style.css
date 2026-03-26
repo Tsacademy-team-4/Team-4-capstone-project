@@ -132,3 +132,55 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
+/* my code  */
+body {
+    font-family: inter, sans-serif;
+}
+
+.image-section {
+    padding: 75px 120px;
+    }
+.image-section-content-1 {
+    /* margin: auto; */
+    place-content: center;
+    color: #164BAF;
+}
+.image-section-content-1 h2 {
+    font-size: 32px;
+    margin: auto;
+    text-align: center;
+    max-width: 80%;
+
+}
+.image-section-content-1 p {
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    max-width: 80%;
+}
+.image-section {
+    background-color: #F2F7FF;
+}
+.planets{
+    background-color: red;
+    width: 200px;
+    height: auto;
+    border-radius: 30px;
+    align-content: center;
+    overflow: hidden;
+}
+.planets img{
+    height: auto;
+    margin: auto;
+}
+
+.planets p{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+/* second part  */
+
+.image-section-content-2 {
+    
+}
