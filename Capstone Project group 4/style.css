@@ -4,15 +4,15 @@
 *::after {
     box-sizing: border-box;
 }
-
-/* 2. remove default margin 
+ 
+/* 2. remove default margin
 padding is optional but i do this because of lists*/
-
+ 
 :where(:not(dialog)) {
     margin: 0;
     padding: 0;
 }
-
+ 
 
 /* 3. great for in-page linking */
 @media(prefers-reduced-motion:no-preference) {
@@ -20,37 +20,36 @@ padding is optional but i do this because of lists*/
         scroll-behavior: smooth;
     }
 }
-
+ 
 /* 4. line height and text rendering improvement */
 :where(html) {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
-
+ 
 /* 5. ensure full viewport height */
 :where(html, body) {
     min-block-size: 100%;
 }
-
+ 
 /* 6. improve line wrapping */
 :where(h1, h2, h3,
     h4, h5, h6) {
     text-wrap: balance;
 }
-
+ 
 :where(p) {
     text-wrap: pretty;
 }
-
+ 
 :where(figure)>:where(figcaption) {
     text-wrap: balance;
 }
-
+ 
 :where(p, h1, h2, h3,
     h4, h5, h6) {
     overflow-wrap: break-word;
 }
-
 
 
 /* 7. making media elements block-level */
@@ -65,12 +64,12 @@ padding is optional but i do this because of lists*/
     object) {
     display: block
 }
-
+ 
 :where(img, svg, video, canvas, picture) {
     block-size: auto;
     max-inline-size: 100%
 }
-
+ 
 /* 8. inherit font and letter spacing for form controls */
 :where(input,
     button,
@@ -80,19 +79,19 @@ padding is optional but i do this because of lists*/
     font: inherit;
     letter-spacing: inherit
 }
-
+ 
 /* 9. textarea can only resized vertically and will grow to adjust its content */
 :where(textarea) {
     resize: vertical;
    field-sizing: content;
 }
-
+ 
 /* 10. table */
 :where(table) {
     width: fit-content;
     border-collapse: collapse;
 }
-
+ 
 :where(pre) {
     direction: ltr;
     max-inline-size: max-content;
@@ -100,7 +99,7 @@ padding is optional but i do this because of lists*/
     white-space: pre;
     writing-mode: lr
 }
-
+ 
 :where(a[href],
     area,
     button,
@@ -118,7 +117,7 @@ padding is optional but i do this because of lists*/
         pre)) {
     cursor: pointer
 }
-
+ 
 /*  this will disable additional non-standard gestures such as double-tap to zoom*/
 :where(a[href],
     area,
