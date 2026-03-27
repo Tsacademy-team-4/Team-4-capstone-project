@@ -132,3 +132,37 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
+.h2-blue{
+    font-size: 24px;
+    font-family:sans-serif;
+    font-style: italic;
+    color: blue;
+    padding: 20px 0;
+    text-align:center ;
+}
+.submit-btn{
+    background-color:#164BAF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: #0B2A7B;
+}
+input,select,textarea{
+    width: 200px;
+    box-sizing: border-box;
+    display:inline-block;
+}
+footer{
+    background-color:#051540;
+    color: white;
+    padding: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+label{
+    font-weight: bold;
+}
