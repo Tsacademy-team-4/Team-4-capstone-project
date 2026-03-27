@@ -132,37 +132,123 @@ padding is optional but i do this because of lists*/
     touch-action: manipulation
 }
 
-.h2-blue{
-    font-size: 24px;
-    font-family:sans-serif;
-    font-style: italic;
-    color: blue;
-    padding: 20px 0;
-    text-align:center ;
+.contact-section {
+    padding: 40px 20px;
 }
-.submit-btn{
-    background-color:#164BAF;
-    color: white;
-    padding: 10px 20px;
+
+.container {
+    max-width: 1000px;
+    margin-left: 0%;
+    margin-right:auto ;
+    padding: 30px;
+    background: #f9f9f9;
+    
+}
+
+.container h2 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+small {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+button {
+    background: #164BAF;
+    color: #fff;
+    padding: 12px 25px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
 }
-.submit-btn:hover{
-    background-color: #0B2A7B;
+
+button:hover {
+    background: #1e40af;
 }
-input,select,textarea{
-    width: 200px;
-    box-sizing: border-box;
-    display:inline-block;
+
+footer {
+    background: #051540;
+    color: #fff;
+    padding: 30px 20px;
+    margin-top: 40px;
 }
-footer{
-    background-color:#051540;
-    color: white;
-    padding: 20px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
+
+.footer-content {
+    max-width: 1000px;
+    margin-left: 0%;
+    margin-right: auto;
 }
-label{
-    font-weight: bold;
+
+.footer-content h4 {
+    margin-bottom: 10px;
 }
+
+.footer-content p {
+    font-size: 14px;
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 0.5px solid #aaa;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
