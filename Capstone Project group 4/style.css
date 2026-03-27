@@ -134,6 +134,19 @@ padding is optional but i do this because of lists*/
 
 /* TABLE SECTION STYLING */
 
+section {
+    margin-top: 50px;
+}
+
+.table-field h3 {
+    color: #164BAF;
+    padding-bottom: 10px;;
+
+}
+
+.table-field p {
+padding-bottom: 30px;
+}
 table {
   table-layout:fixed;
   width: 100%;
@@ -142,7 +155,7 @@ table {
 }
 
 th, td {
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   text-align: center;
   padding: 10px 10px
 }
@@ -153,9 +166,10 @@ td  {
 
 thead {
   background-color: #164BAF;
+  color: #ffffff;
 }
 
- tbody th {
+ tbody {
     background-color:#D1E3FF;
  }
 
