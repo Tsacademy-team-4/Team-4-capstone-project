@@ -130,6 +130,8 @@ padding is optional but i do this because of lists*/
     [tabindex]:not([tabindex*="-"])) {
     touch-action: manipulation
 }
+
+
 /*bobby's code*/
 body {
     font-family: inter,sans-serif;
@@ -198,6 +200,85 @@ justify-items: center;
 }
  
 /*second part*/
+
+
+/* TABLE SECTION STYLING */
+
+.table-caption {
+    max-width: 70%;
+    margin-bottom: 2rem;
+}
+.table-field{
+    padding: 80px 120px;
+}
+caption {
+    font-size: smaller;
+    font-weight: bold;
+    color: #0F2A44;
+}
+.table-field h3 {
+    color: #164BAF;
+    padding-bottom: 10px;;
+
+}
+
+.table-field p {
+padding-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 18px;
+
+}
+.first-row {
+  border-top-left-radius: 18px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 18px;
+}
+
+th, td {
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 10px 10px
+}
+
+td  {
+  background-color: #F2F7FF;
+}
+
+thead {
+  background-color: #164BAF;
+  color: #ffffff;
+}
+
+ tbody {
+    background-color:#D1E3FF;
+ }
+
+.table-field h3 {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+caption {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.planet{
+    background: #F2F7FF;
+}
+
+@media (max-width: 768px) {
+    #table {
+        display: none;
+      }
+}
 
 
 /* Form and footer section  */
