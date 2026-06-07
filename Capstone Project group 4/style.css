@@ -136,6 +136,8 @@ padding is optional but i do this because of lists*/
 body {
     font-family: inter,sans-serif;
 }
+
+
  /* VIDEO SECTION  */
 #video{
     display: flex;
