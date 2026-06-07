@@ -136,7 +136,54 @@ padding is optional but i do this because of lists*/
 body {
     font-family: inter,sans-serif;
 }
- 
+
+
+ /* VIDEO SECTION  */
+#video{
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    gap: 100px;
+    margin: 70px 100px;
+
+}
+#video-player{
+    width: 100%;
+    display: block;
+}
+.video-section-content-1{
+    flex: 1;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.video-section-content-2 {
+    flex: 1;
+    text-align: center;
+    max-width: 500px;
+}
+.video-section-content-2 h2 {
+    color: #164BAF;
+}
+.video-section-content-2 p {
+    color: #0F2A44;
+}
+.units {
+    color: #1274A4;
+}
+
+@media (max-width: 767px) {
+    #video {
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin: 100px 30px;
+    }
+    .video-section-content-1, .video-section-content-2 {
+        max-width: 100%;
+    }
+}
+
+ /* IMAGE SECTION  */
 .image-section{
     padding: 75px 120px;
 }
@@ -289,8 +336,6 @@ caption {
 
 .container {
     padding: 100px;
-    background: #f9f9f9;
-    
 }
 
 .container h2 {
